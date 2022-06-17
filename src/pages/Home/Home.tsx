@@ -20,6 +20,7 @@ const Home = (props) => {
               evento={item.evento}
               responsavel={item.responsavel}
               descricao={item.descricao}
+              image={item.image}
             />
           ))}
         </Div2>
