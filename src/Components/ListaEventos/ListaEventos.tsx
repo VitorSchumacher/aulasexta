@@ -1,5 +1,6 @@
 import React from "react";
 import { Div, DivTitulo, Titulo, Responsavel, Descricao } from "./styled";
+import moment from "moment/moment";
 
 const ListaEventos = (params) => {
   return (
@@ -14,6 +15,14 @@ const ListaEventos = (params) => {
       <Descricao>
         <b>Descrição: </b>
         {params.descricao}
+      </Descricao>
+      <Descricao>
+        <b>Hora: </b>
+        {params.time}
+      </Descricao>
+      <Descricao>
+        <b>Data: </b>
+        {moment(`${params.date}`, "YYYY-MM-DD").format("DD/MM/YYYY")}
       </Descricao>
     </Div>
   );

@@ -22,6 +22,7 @@ const AddEvento = (props) => {
   const [date, setDate] = useState('')
   const [time, setTime] = useState('')
 
+
   return (
     <Div>
       <Titulo>Adicionar novo evento</Titulo>
@@ -30,6 +31,7 @@ const AddEvento = (props) => {
         <Input placeholder="Responsavel" onChange={(e) => setResponsavel(e.target.value)}/>
         <Input3 placeholder="Descrição" onChange={(e) => setDescricao(e.target.value)}/>
         <Label htmlFor="arquivo">{imageData || `Adicionar imagem`}</Label>
+
         <input
           type="file"
           id="arquivo"
@@ -44,14 +46,29 @@ const AddEvento = (props) => {
           accept="image/*"
         />
         <DivTime>
-          <Input2 placeholder="Ola" type="date" onChange={(e) => setDate(e.target.value)}/>
-          <Input2 placeholder="Ola" type="time" onChange={(e) => setTime(e.target.value)}/>
+          <Input2
+            placeholder="Ola"
+            type="date"
+            onChange={(e) => setDate(e.target.value)}
+          />
+          <Input2
+            placeholder="Ola"
+            type="time"
+            onChange={(e) => setTime(e.target.value)}
+          />
         </DivTime>
         <Button
           onClick={() => {
-            const currentEvents = [...props.eventos]
-            props.setEventos([...currentEvents, { evento, responsavel, descricao, image, date, time}])
-        }}>Cadastrar</Button>
+            const currentEvents = [...props.eventos];
+            props.setEventos([
+              ...currentEvents,
+              { evento, responsavel, descricao, image, date, time },
+            ]);
+            console.log(currentEvents);
+          }}
+        >
+          Cadastrar
+        </Button>
       </Div2>
     </Div>
   );
