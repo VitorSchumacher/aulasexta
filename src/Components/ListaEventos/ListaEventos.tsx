@@ -5,7 +5,7 @@ import moment from "moment/moment";
 const ListaEventos = (params) => {
   return (
     <Div key={params.id}>
-      <DivTitulo>
+      <DivTitulo image={params.image}>
         <Titulo>{params.evento}</Titulo>
       </DivTitulo>
       <Responsavel>
