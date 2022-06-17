@@ -8,11 +8,12 @@ import {
   Input2,
   Input3,
   Button,
+  DivTime,
   Label,
 } from "./styled";
 import "./style.css";
 
-const AddEvento = (props) => {
+const AddEvento = (props) => { 
   const [evento, setEvento] = useState('')
   const [responsavel, setResponsavel] = useState('')
   const [descricao, setDescricao] = useState('')
@@ -33,10 +34,10 @@ const AddEvento = (props) => {
           id="arquivo"
           onChange={(event) => console.log(event.target.value)}
         />
-        <div>
+        <DivTime>
           <Input2 placeholder="Ola" type="date" onChange={(e) => setDate(e.target.value)}/>
           <Input2 placeholder="Ola" type="time" onChange={(e) => setTime(e.target.value)}/>
-        </div>
+        </DivTime>
         <Button 
           onClick={() => {
             const currentEvents = [...props.eventos]
