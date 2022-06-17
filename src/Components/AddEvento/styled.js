@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   background-color: #0f5d8f;
-  max-width: 30vw;
-  height: 100vh;
+  width: 30vw;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
 `;
