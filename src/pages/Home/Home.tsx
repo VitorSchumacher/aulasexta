@@ -5,7 +5,7 @@ import ListaEventos from "../../Components/ListaEventos/ListaEventos.tsx";
 import { Div, Div2 } from "./styled";
 import { useState } from "react";
 
-const Home = () => {
+const Home = (props) => {
   const [eventos, setEventos] = useState([
     {
       evento: "vitor",
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <TopBar />
+      <TopBar setLogged={props.setLogged}/>
       <Div>
         <AddEvento />
         <Div2>

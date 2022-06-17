@@ -3,7 +3,7 @@ import { DivLogin, InputLogin, ButtonEnviar } from "./styled";
 import "./styles.css";
 import LogoAmf from "../../assets/image/logoamf.svg";
 import { useState } from "react";
-const Login = () => {
+const Login = (props) => {
   const usuarios = [
     {
       email: "usuario@gmail.com",
@@ -41,7 +41,7 @@ const Login = () => {
           <InputLogin placeholder="Senha" name="senha" />
           <p className="recuperar-senha">Recuperar senha</p>
           <div className="div-botao-enviar">
-            <ButtonEnviar>Entrar</ButtonEnviar>
+            <ButtonEnviar onClick={() => props.setLogged(true)}>Entrar</ButtonEnviar>
           </div>
         </DivLogin>
       </div>

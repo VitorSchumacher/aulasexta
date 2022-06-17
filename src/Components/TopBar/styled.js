@@ -22,6 +22,12 @@ export const Img = styled.img`
   max-height: 150px;
 `;
 
+export const Logout = styled.img`
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+`;
+
 export const Palavra = styled.p`
   color: #fff;
   font-weight: bold;
