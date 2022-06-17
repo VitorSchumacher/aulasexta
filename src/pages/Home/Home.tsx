@@ -6,13 +6,13 @@ import { Div, Div2 } from "./styled";
 import { useState } from "react";
 
 const Home = (props) => {
-  const [eventos, setEventos] = useState([])
+  const [eventos, setEventos] = useState([]);
 
   return (
     <>
-      <TopBar setLogged={props.setLogged}/>
+      <TopBar setLogged={props.setLogged} />
       <Div>
-        <AddEvento setEventos={setEventos} eventos={eventos}/>
+        <AddEvento setEventos={setEventos} eventos={eventos} />
         <Div2>
           {eventos.map((item, index) => (
             <ListaEventos
@@ -20,6 +20,8 @@ const Home = (props) => {
               evento={item.evento}
               responsavel={item.responsavel}
               descricao={item.descricao}
+              time={item.time}
+              date={item.date}
             />
           ))}
         </Div2>
