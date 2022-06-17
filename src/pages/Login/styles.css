@@ -1,0 +1,30 @@
+.div-principal {
+  height: 100vh;
+  background-color: #0181d4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../../assets/image/fundo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.div-logo {
+  max-width: 250px;
+  margin: 16px 0;
+}
+.text-sub-header {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.login-input {
+  margin: 40px 0px 28px;
+}
+.div-botao-enviar {
+  margin: 35px 0 25px;
+}
+.recuperar-senha {
+  color: #ffffff;
+  margin: 10px 0 0 -200px;
+  cursor: pointer;
+}
