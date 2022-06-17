@@ -5,6 +5,7 @@ export const Div = styled.div`
   width: 30vw;
   display: flex;
   flex: 1;
+  min-height: 88vh;
   flex-direction: column;
   align-items: center;
 `;
