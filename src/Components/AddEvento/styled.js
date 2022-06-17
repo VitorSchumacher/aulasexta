@@ -26,7 +26,7 @@ export const Input = styled.input`
   border-style: none;
   height: 2rem;
   margin: 15px 0;
-  background-color: #DDF1FE;
+  background-color: #ddf1fe;
   font-size: 1rem;
 `;
 export const Input2 = styled.input`
@@ -38,7 +38,17 @@ export const Input2 = styled.input`
   margin: 15px 1rem;
   color: #777777;
   width: 140px;
-  background-color: #DDF1FE;
+  background-color: #ddf1fe;
+`;
+
+export const Label = styled.label`
+  background-color: #ddf1fe;
+  margin: 1rem 0;
+  padding: 3px;
+  width: 20rem;
+  border-radius: 5px;
+  color: #777777;
+  text-align: center;
 `;
 
 export const Input3 = styled.textarea`
@@ -50,12 +60,12 @@ export const Input3 = styled.textarea`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 3px;
-  background-color: #DDF1FE;
+  background-color: #ddf1fe;
 `;
 
 export const Button = styled.button`
   color: #fff;
-  background-color: #08293E;
+  background-color: #08293e;
   border-radius: 5px;
   font-size: 1rem;
   height: 2rem;
@@ -64,11 +74,10 @@ export const Button = styled.button`
   font-weight: bold;
   border-style: none;
   cursor: pointer;
-  &:hover{
-    background-color: #0F3045;
+  &:hover {
+    background-color: #0f3045;
   }
-  &:active{
-    background-color: #08293E;
+  &:active {
+    background-color: #08293e;
   }
-  
 `;
