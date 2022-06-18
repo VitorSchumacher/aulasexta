@@ -28,6 +28,7 @@ export const ButtonEnviar = styled.button`
   font-size: 16px;
   width: 180px;
   height: 35px;
+  margin: 10px;
   font-weight: bold;
   cursor: pointer;
 `;

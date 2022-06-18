@@ -40,9 +40,14 @@ const Login = (props) => {
           </div>
           <InputLogin placeholder="Senha" name="senha" />
           <p className="recuperar-senha">Recuperar senha</p>
-          <div className="div-botao-enviar">
-            <ButtonEnviar onClick={() => props.setLogged(true)}>Entrar</ButtonEnviar>
-          </div>
+            <ButtonEnviar onClick={() => {
+              props.setNoLogin(false)
+              props.setLogged(true)
+            }}>Entrar</ButtonEnviar>
+            <ButtonEnviar onClick={() => {
+              props.setNoLogin(true)
+              props.setLogged(true)
+            }}>Entrar sem login</ButtonEnviar>
         </DivLogin>
       </div>
     </div>
