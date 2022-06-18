@@ -29,7 +29,7 @@ const AddEvento = (props) => {
       <Div2>
         <Input placeholder="Nome do evento" onChange={(e) => setEvento(e.target.value)}/>
         <Input placeholder="Responsavel" onChange={(e) => setResponsavel(e.target.value)}/>
-        <Input3 placeholder="Descrição" onChange={(e) => setDescricao(e.target.value)}/>
+        <Input3 maxlength="10" placeholder="Descrição" onChange={(e) => setDescricao(e.target.value)}/>
         <Label htmlFor="arquivo">{imageData || `Adicionar imagem`}</Label>
 
         <input

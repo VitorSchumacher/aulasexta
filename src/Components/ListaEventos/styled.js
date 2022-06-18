@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   background-color: #0f5d8f;
-  height: 300px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   border-radius: 10px;
   margin: 1rem;
   display: flex;
